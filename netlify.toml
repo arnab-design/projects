@@ -1,0 +1,10 @@
+[build]
+  base = "JT"
+  command = "cd JT && npm install && npm run build"
+  publish = "JT/build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
