@@ -25,6 +25,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          cache-dependency-path: |
+            JT/package-lock.json
+            nostranos/package-lock.json
 
       - name: Build both apps
         run: ./scripts/build-pages.sh
