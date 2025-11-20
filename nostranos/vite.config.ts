@@ -3,7 +3,8 @@
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
 
-  export default defineConfig({
+export default defineConfig({
+  base: '/nostranos/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -17,9 +18,6 @@
         'next-themes@0.4.6': 'next-themes',
         'lucide-react@0.487.0': 'lucide-react',
         'input-otp@1.4.2': 'input-otp',
-        'figma:asset/90d7f6b2e078e021e2d757f159b7242e3336bfa6.png': path.resolve(__dirname, './src/assets/90d7f6b2e078e021e2d757f159b7242e3336bfa6.png'),
-        'figma:asset/52cce948fd81271b938df7f4433f2c3af4c2725c.png': path.resolve(__dirname, './src/assets/52cce948fd81271b938df7f4433f2c3af4c2725c.png'),
-        'figma:asset/e8c55b93e0d869d9cf6f0b40ec93b03f75c0c46f.png': path.resolve(__dirname, './src/assets/e8c55b93e0d869d9cf6f0b40ec93b03f75c0c46f.png'),
         'embla-carousel-react@8.6.0': 'embla-carousel-react',
         'cmdk@1.1.1': 'cmdk',
         'class-variance-authority@0.7.1': 'class-variance-authority',

@@ -1,41 +1,41 @@
-import marbleBackground from 'figma:asset/e8c55b93e0d869d9cf6f0b40ec93b03f75c0c46f.png';
-import logoImage from 'figma:asset/52cce948fd81271b938df7f4433f2c3af4c2725c.png';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import marbleBackground from '@/assets/e8c55b93e0d869d9cf6f0b40ec93b03f75c0c46f.png';
+import logoImage from '@/assets/52cce948fd81271b938df7f4433f2c3af4c2725c.png';
+import { ImageWithFallback } from './shared/ImageWithFallback';
 
 const skewerItems = {
   left: [
     {
       name: 'CHICKEN SATAY',
       description: 'Peanut Sauce, Thai Chilies, Scallion, Cilantro, Sesame Seed',
-      image: 'https://images.unsplash.com/photo-1718421670841-19501b4a9e03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwc2F0YXklMjBza2V3ZXJzfGVufDF8fHx8MTc2MzUzMzcyNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1718421670841-19501b4a9e03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwc2F0YXklMjBza2V3ZXJzfGVufDF8fHx8MTc2MzUzMzcyNXww&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       name: 'CHICKEN SOUVLAKI',
       description: 'Tzatziki, Fresh Parsley, Lemon',
-      image: 'https://images.unsplash.com/photo-1577194509876-4bb24787a641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmlsbGVkJTIwY2hpY2tlbiUyMHNvdXZsYWtpfGVufDF8fHx8MTc2MzUzMzcyNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1577194509876-4bb24787a641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmlsbGVkJTIwY2hpY2tlbiUyMHNvdXZsYWtpfGVufDF8fHx8MTc2MzUzMzcyNnww&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       name: 'LAMB SPIEDINI',
       description: 'Herb-Marinated Lamb, Rosemary, Thyme, Garlic Aioli, Lemon Zest',
-      image: 'https://images.unsplash.com/photo-1708597521669-f7312f312b29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYW1iJTIwc2tld2VycyUyMGdvdXJtZXR8ZW58MXx8fHwxNzYzNTMzNzI1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1708597521669-f7312f312b29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYW1iJTIwc2tld2VycyUyMGdvdXJtZXR8ZW58MXx8fHwxNzYzNTMzNzI1fDA&ixlib=rb-4.1.0&q=80&w=1080'
     }
   ],
   right: [
     {
       name: 'TERIYAKI SALMON',
       description: 'Teriyaki glaze, Miso-Soy Beurre Blanc, Scallions, Sesame, Micro Shiso',
-      image: 'https://images.unsplash.com/photo-1566840501079-9e6ab49fc925?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZXJpeWFraSUyMHNhbG1vbiUyMHNrZXdlcnxlbnwxfHx8fDE3NjM1MzM3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1566840501079-9e6ab49fc925?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZXJpeWFraSUyMHNhbG1vbiUyMHNrZXdlcnxlbnwxfHx8fDE3NjM1MzM3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       name: 'POFFERTJES & BERRY SKEWERS',
       description: 'Strawberry, Blueberry, Maple Syrup, Powdered Sugar',
-      image: 'https://images.unsplash.com/photo-1718421670841-19501b4a9e03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwc2F0YXklMjBza2V3ZXJzfGVufDF8fHx8MTc2MzUzMzcyNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1718421670841-19501b4a9e03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwc2F0YXklMjBza2V3ZXJzfGVufDF8fHx8MTc2MzUzMzcyNXww&ixlib=rb-4.1.0&q=80&w=1080'
     }
   ]
 };
 
 // Additional image for grid (6 images total)
-const additionalImage = 'https://images.unsplash.com/photo-1577367997065-fdd8fd94fb3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWVmJTIwc2tld2VycyUyMGthYm9ic3xlbnwxfHx8fDE3NjM2MjQ3MDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral';
+const additionalImage = 'https://images.unsplash.com/photo-1577367997065-fdd8fd94fb3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWVmJTIwc2tld2VycyUyMGthYm9ic3xlbnwxfHx8fDE3NjM2MjQ3MDN8MA&ixlib=rb-4.1.0&q=80&w=1080';
 
 export function SkewersMenuPage() {
   const allItems = [...skewerItems.left, ...skewerItems.right];

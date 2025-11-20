@@ -1,41 +1,41 @@
 import { Fragment } from 'react';
-import marbleBackground from 'figma:asset/e8c55b93e0d869d9cf6f0b40ec93b03f75c0c46f.png';
-import logoImage from 'figma:asset/52cce948fd81271b938df7f4433f2c3af4c2725c.png';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import marbleBackground from '@/assets/e8c55b93e0d869d9cf6f0b40ec93b03f75c0c46f.png';
+import logoImage from '@/assets/52cce948fd81271b938df7f4433f2c3af4c2725c.png';
+import { ImageWithFallback } from './shared/ImageWithFallback';
 
 const crostiniItems = {
   left: [
     {
       name: 'BEET SMOKED SALMON',
       description: 'Atlantic Salmon, Whipped Lemon-Dill Mascarpone, Cucumber Ribbon, Salmon Roe, Micro-Dill, Edible Flower, Maldon',
-      image: 'https://images.unsplash.com/photo-1704007573697-6a516da421ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbW9rZWQlMjBzYWxtb24lMjBjcm9zdGluaXxlbnwxfHx8fDE3NjM2MjM5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1704007573697-6a516da421ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbW9rZWQlMjBzYWxtb24lMjBjcm9zdGluaXxlbnwxfHx8fDE3NjM2MjM5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       name: 'STEAK & BURRATA',
       description: 'Prime Canadian Strip loin, Garlic Butter, Burrata, Caramelized Onion, Chimichurri, Balsamic Glaze, EVOO, Maldon',
-      image: 'https://images.unsplash.com/photo-1732763897987-ce7e63a94d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGVhayUyMGJ1cnJhdGElMjBjcm9zdGluaXxlbnwxfHx8fDE3NjM1MzM3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1732763897987-ce7e63a94d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGVhayUyMGJ1cnJhdGElMjBjcm9zdGluaXxlbnwxfHx8fDE3NjM1MzM3MjN8MA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       name: 'AVOCADO TOAST',
       description: 'Avocado mousse, Cherry tomato, Beet puree, Watermelon radish, Everything seed, Hot Honey, Microgreen',
-      image: 'https://images.unsplash.com/photo-1761315414017-04c3906359d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdm9jYWRvJTIwdG9hc3QlMjBnb3VybWV0fGVufDF8fHx8MTc2MzUzMzcyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1761315414017-04c3906359d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdm9jYWRvJTIwdG9hc3QlMjBnb3VybWV0fGVufDF8fHx8MTc2MzUzMzcyM3ww&ixlib=rb-4.1.0&q=80&w=1080'
     }
   ],
   right: [
     {
       name: 'PROSCIUTTO & PEAR',
       description: 'Stracciatella, Caramelized Pear, Prosciutto di Parma, Honey, Fresh Thyme, Black Pepper',
-      image: 'https://images.unsplash.com/photo-1601368135477-472a330882a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9zY2l1dHRvJTIwcGVhciUyMGNyb3N0aW5pfGVufDF8fHx8MTc2MzYyMzk4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1601368135477-472a330882a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9zY2l1dHRvJTIwcGVhciUyMGNyb3N0aW5pfGVufDF8fHx8MTc2MzYyMzk4M3ww&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       name: 'WHIPPED GOAT CHEESE & FIG',
       description: 'Goat Cheese Mousse, Honey-Roasted Fig, Candied Walnuts, Lemon Zest, Thyme, Balsamic Glaze',
-      image: 'https://images.unsplash.com/photo-1751183295754-9cff9577a44e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb2F0JTIwY2hlZXNlJTIwZmlnJTIwY3Jvc3Rpbml8ZW58MXx8fHwxNzYzNjIzOTg0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1751183295754-9cff9577a44e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb2F0JTIwY2hlZXNlJTIwZmlnJTIwY3Jvc3Rpbml8ZW58MXx8fHwxNzYzNjIzOTg0fDA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       name: 'CAPRESE',
       description: 'Burrata, Tomato Confit, Pesto, Balsamic Pearls, Micro Basil, EVOO, Maldon',
-      image: 'https://images.unsplash.com/photo-1724154854089-4bbd0e7d09c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXByZXNlJTIwdG9tYXRvJTIwbW96emFyZWxsYXxlbnwxfHx8fDE3NjM2MjM5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+      image: 'https://images.unsplash.com/photo-1724154854089-4bbd0e7d09c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXByZXNlJTIwdG9tYXRvJTIwbW96emFyZWxsYXxlbnwxfHx8fDE3NjM2MjM5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080'
     }
   ]
 };

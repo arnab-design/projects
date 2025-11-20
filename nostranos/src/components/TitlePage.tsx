@@ -1,5 +1,5 @@
-import logoImage from 'figma:asset/52cce948fd81271b938df7f4433f2c3af4c2725c.png';
-import marbleBackground from 'figma:asset/e8c55b93e0d869d9cf6f0b40ec93b03f75c0c46f.png';
+import logoImage from '@/assets/52cce948fd81271b938df7f4433f2c3af4c2725c.png';
+import marbleBackground from '@/assets/e8c55b93e0d869d9cf6f0b40ec93b03f75c0c46f.png';
 
 export function TitlePage() {
   return (
