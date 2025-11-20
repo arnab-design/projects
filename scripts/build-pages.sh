@@ -5,7 +5,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DIST_DIR="$ROOT_DIR/dist-site"
 
 rm -rf "$DIST_DIR"
-mkdir -p "$DIST_DIR/jt" "$DIST_DIR/nostranos"
+mkdir -p "$DIST_DIR/jt"
 
 echo "Building JT..."
 (
@@ -14,15 +14,6 @@ echo "Building JT..."
   VITE_BASE_PATH="/projects/jt/" npm run build
   cp build/index.html build/404.html
   cp -R build/* "$DIST_DIR/jt"
-)
-
-echo "Building Nostranos..."
-(
-  cd "$ROOT_DIR/nostranos"
-  npm install
-  VITE_BASE_PATH="/projects/nostranos/" npm run build
-  cp build/index.html build/404.html
-  cp -R build/* "$DIST_DIR/nostranos"
 )
 
 cat <<'HTML' > "$DIST_DIR/index.html"
@@ -44,7 +35,6 @@ cat <<'HTML' > "$DIST_DIR/index.html"
     <h1>Choose an experience</h1>
     <ul>
       <li><a href="/jt/">JT – Food Photography Pricing Sheet</a></li>
-      <li><a href="/nostranos/">Nostranos – Artisanal Menu Experience</a></li>
     </ul>
   </body>
 </html>

@@ -1,4 +1,4 @@
-name: Deploy JT + Nostranos to GitHub Pages
+name: Deploy JT to GitHub Pages
 
 on:
   push:
@@ -27,7 +27,6 @@ jobs:
           cache: npm
           cache-dependency-path: |
             JT/package-lock.json
-            nostranos/package-lock.json
 
       - name: Build both apps
         run: ./scripts/build-pages.sh
