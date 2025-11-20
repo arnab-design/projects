@@ -1,7 +1,7 @@
 [build]
   base = "JT"
-  command = "cd JT && npm install && npm run build"
-  publish = "JT/build"
+  command = "npm install && npm run build"
+  publish = "build"
 
 [[redirects]]
   from = "/*"
