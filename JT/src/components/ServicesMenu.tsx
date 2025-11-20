@@ -52,7 +52,7 @@ export function ServicesMenu({ currentPage }: ServicesMenuProps) {
           </div>
 
           {/* Featured 1-Hour Power Shoot - Large */}
-          <div className="rounded-lg bg-gradient-to-br from-[#E67E22] to-[#D35400] text-white p-6 border-4 border-[#F39C12] relative shadow-lg mb-3">
+          <div className="rounded-lg bg-[#D35400] bg-gradient-to-br from-[#E67E22] to-[#D35400] text-white p-6 border-4 border-[#F39C12] relative shadow-lg mb-3">
             <div className="absolute -top-1 -right-1 -left-1 bg-[#F39C12] text-center py-1.5 rounded-t text-sm text-black" style={{ fontFamily: 'Impact, sans-serif', letterSpacing: '1px' }}>
               HOLIDAY SPECIAL
             </div>
@@ -89,7 +89,7 @@ export function ServicesMenu({ currentPage }: ServicesMenuProps) {
           </div>
 
           {/* What You Get & Add-Ons */}
-          <div className="grid grid-cols-2 gap-2.5 mb-4">
+          <div className="grid grid-cols-2 gap-2.5 mb-3">
             {/* What You Get */}
             <div className="rounded-lg bg-white p-5 shadow-md">
               <h3 className="text-lg mb-3 text-black">What You Get</h3>
@@ -136,25 +136,6 @@ export function ServicesMenu({ currentPage }: ServicesMenuProps) {
                   <p className="text-[10px] text-neutral-600 mb-0.5">Extended shoot time</p>
                   <p className="text-[#E67E22]">+$400</p>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Footer CTA */}
-          <div className="bg-black text-white rounded-lg p-5 text-center">
-            <p className="text-lg mb-3">Ready to elevate your restaurant's visual presence?</p>
-            <div className="grid grid-cols-2 gap-x-6 gap-y-1.5 text-xs max-w-md mx-auto">
-              <div className="text-left">
-                <span className="text-neutral-400">Email:</span> james@foodphoto.ca
-              </div>
-              <div className="text-left">
-                <span className="text-neutral-400">Phone:</span> (416) 555-1234
-              </div>
-              <div className="text-left">
-                <span className="text-neutral-400">Instagram:</span> @jamesfoodphoto
-              </div>
-              <div className="text-left">
-                <span className="text-neutral-400">Web:</span> jamesfoodphoto.ca
               </div>
             </div>
           </div>
