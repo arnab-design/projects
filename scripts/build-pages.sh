@@ -11,7 +11,7 @@ echo "Building JT..."
 (
   cd "$ROOT_DIR/JT"
   npm install
-  npm run build
+  VITE_BASE_PATH="/projects/jt/" npm run build
   cp build/index.html build/404.html
   cp -R build/* "$DIST_DIR/jt"
 )
@@ -20,7 +20,7 @@ echo "Building Nostranos..."
 (
   cd "$ROOT_DIR/nostranos"
   npm install
-  npm run build
+  VITE_BASE_PATH="/projects/nostranos/" npm run build
   cp build/index.html build/404.html
   cp -R build/* "$DIST_DIR/nostranos"
 )
